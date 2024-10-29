@@ -15,7 +15,7 @@ export const registerUser = createAsyncThunk(
       "https://shalinisaree-backend.onrender.com/api/auth/register",
       formData,
       {
-        withCredentials: true,
+        withCredentials: false,
       }
     );
 
@@ -31,7 +31,7 @@ export const loginUser = createAsyncThunk(
       "https://shalinisaree-backend.onrender.com/api/auth/login",
       formData,
       {
-        withCredentials: true,
+        withCredentials: false,
       }
     );
 
@@ -47,7 +47,7 @@ export const logoutUser = createAsyncThunk(
       "https://shalinisaree-backend.onrender.com/api/auth/logout",
       {},
       {
-        withCredentials: true,
+        withCredentials: false,
       }
     );
 
@@ -62,7 +62,7 @@ export const checkAuth = createAsyncThunk(
     const response = await axios.get(
       "https://shalinisaree-backend.onrender.com/api/auth/check-auth",
       {
-        withCredentials: true,
+        withCredentials: false,
         headers: {
           "Cache-Control":
             "no-store, no-cache, must-revalidate, proxy-revalidate",
