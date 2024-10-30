@@ -2,7 +2,6 @@ import { Card, CardContent, CardFooter } from "../ui/card";
 import { Button } from "../ui/button";
 import { brandOptionsMap, categoryOptionsMap } from "@/config";
 import { Badge } from "../ui/badge";
-
 function ShoppingProductTile({
   product,
   handleGetProductDetails,
@@ -13,7 +12,7 @@ function ShoppingProductTile({
       <div onClick={() => handleGetProductDetails(product?._id)}>
         <div className="relative">
           <img
-            src={product?.image}
+            src={product?.image || "https://tse2.mm.bing.net/th?id=OIP.oBQbv3ppTXRXuoW2gvDhzQHaJZ&pid=Api&P=0&h=180"}
             alt={product?.title}
             className="w-full h-[300px] object-cover rounded-t-lg"
           />
