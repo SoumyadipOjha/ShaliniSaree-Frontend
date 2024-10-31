@@ -80,7 +80,7 @@ function AdminOrdersView() {
                     <TableCell>
                       {orderItem?.image ? (
                         <img
-                          src={orderItem.image}
+                          src={orderItem?.image}
                           alt="Order"
                           className="w-16 h-16 rounded-md object-cover"
                         />
