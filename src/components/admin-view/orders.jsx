@@ -51,6 +51,7 @@ function AdminOrdersView() {
               <TableHead>Order Date</TableHead>
               <TableHead>Order Status</TableHead>
               <TableHead>Order Price</TableHead>
+              <TableHead>Order Image</TableHead> {/* New column for the image */}
               <TableHead>
                 <span className="sr-only">Details</span>
               </TableHead>
@@ -59,7 +60,7 @@ function AdminOrdersView() {
           <TableBody>
             {orderList && orderList.length > 0
               ? orderList.map((orderItem) => (
-                  <TableRow>
+                  <TableRow key={orderItem._id}>
                     <TableCell>{orderItem?._id}</TableCell>
                     <TableCell>{orderItem?.orderDate.split("T")[0]}</TableCell>
                     <TableCell>
@@ -76,6 +77,17 @@ function AdminOrdersView() {
                       </Badge>
                     </TableCell>
                     <TableCell>${orderItem?.totalAmount}</TableCell>
+                    <TableCell>
+                      {orderItem?.image ? (
+                        <img
+                          src={orderItem.image}
+                          alt="Order"
+                          className="w-16 h-16 rounded-md object-cover"
+                        />
+                      ) : (
+                        "No image"
+                      )}
+                    </TableCell>
                     <TableCell>
                       <Dialog
                         open={openDetailsDialog}
