@@ -58,11 +58,12 @@ export const addProductFormElements = [
     name: "category",
     componentType: "select",
     options: [
-      { id: "men", label: "Men" },
-      { id: "women", label: "Women" },
-      { id: "kids", label: "Kids" },
-      { id: "accessories", label: "Accessories" },
+      { id: "men", label: "Party Wear" },
+      { id: "women", label: "Wedding Wear" },
+      { id: "kids", label: "Daily Wear" },
+      { id: "accessories", label: "New Arrivals" },
       { id: "footwear", label: "Footwear" },
+      
     ],
   },
   {
@@ -70,12 +71,12 @@ export const addProductFormElements = [
     name: "brand",
     componentType: "select",
     options: [
-      { id: "nike", label: "Nike" },
-      { id: "adidas", label: "Adidas" },
-      { id: "puma", label: "Puma" },
-      { id: "levi", label: "Levi's" },
-      { id: "zara", label: "Zara" },
-      { id: "h&m", label: "H&M" },
+      { id: "nike", label: "Organza" },
+      { id: "adidas", label: "Silk" },
+      { id: "puma", label: "Banarasi" },
+      { id: "levi", label: "Tissue" },
+      { id: "zara", label: "Ajrakh" },
+      { id: "h&m", label: "Ready to Wear" },
     ],
   },
   {
@@ -114,22 +115,22 @@ export const shoppingViewHeaderMenuItems = [
   },
   {
     id: "men",
-    label: "Men",
+    label: "Party Wear",
     path: "/shop/listing",
   },
   {
     id: "women",
-    label: "Women",
+    label: "Wedding Wear",
     path: "/shop/listing",
   },
   {
     id: "kids",
-    label: "Kids",
+    label: "Daily Wear",
     path: "/shop/listing",
   },
   {
     id: "footwear",
-    label: "Footwear",
+    label: "New Arrivals",
     path: "/shop/listing",
   },
   {
@@ -145,37 +146,39 @@ export const shoppingViewHeaderMenuItems = [
 ];
 
 export const categoryOptionsMap = {
-  men: "Men",
-  women: "Women",
-  kids: "Kids",
-  accessories: "Accessories",
-  footwear: "Footwear",
+  men: "Party Wear",
+  women: "Wedding Wear",
+  kids: "Daily Wear",
+  accessories: "New arrivals",
+  footwear:"Footwear"
+  
 };
 
 export const brandOptionsMap = {
-  nike: "Nike",
-  adidas: "Adidas",
-  puma: "Puma",
-  levi: "Levi",
-  zara: "Zara",
-  "h&m": "H&M",
+  nike: "Organza",
+  adidas: "Silk",
+  puma: "Banarasi",
+  levi: "Tissue",
+  zara: "Ajrakh",
+  "h&m": "Ready to Wear",
 };
 
 export const filterOptions = {
   category: [
-    { id: "men", label: "Men" },
-    { id: "women", label: "Women" },
-    { id: "kids", label: "Kids" },
-    { id: "accessories", label: "Accessories" },
-    { id: "footwear", label: "Footwear" },
+    { id: "men", label: "Party Wear" },
+    { id: "women", label: "Wedding wear" },
+    { id: "kids", label: "Daily Wear" },
+    { id: "accessories", label: "New Arrivals" },
+    { id: "footwear", label: "footwear" },
+    
   ],
   brand: [
-    { id: "nike", label: "Nike" },
-    { id: "adidas", label: "Adidas" },
-    { id: "puma", label: "Puma" },
-    { id: "levi", label: "Levi's" },
-    { id: "zara", label: "Zara" },
-    { id: "h&m", label: "H&M" },
+    { id: "nike", label: "Organza" },
+    { id: "adidas", label: "Silk" },
+    { id: "puma", label: "Banarasi" },
+    { id: "levi", label: "Tissue " },
+    { id: "zara", label: "Ajrakh" },
+    { id: "h&m", label: "Ready to We" },
   ],
 };
 
