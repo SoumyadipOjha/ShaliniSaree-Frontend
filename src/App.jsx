@@ -22,7 +22,8 @@ import { Skeleton } from "@/components/ui/skeleton";
 import PaypalReturnPage from "./pages/shopping-view/paypal-return";
 import PaymentSuccessPage from "./pages/shopping-view/payment-success";
 import SearchProducts from "./pages/shopping-view/search";
-
+import WhatsAppButton from "./pages/shopping-view/whatsapp";
+import SocialLinks from "./pages/shopping-view/socialMedia";
 function App() {
   const { user, isAuthenticated, isLoading } = useSelector(
     (state) => state.auth
@@ -87,7 +88,9 @@ function App() {
           <Route path="account" element={<ShoppingAccount />} />
           <Route path="paypal-return" element={<PaypalReturnPage />} />
           <Route path="payment-success" element={<PaymentSuccessPage />} />
+          <Route path="whatsapp" element={<WhatsAppButton/>} />
           <Route path="search" element={<SearchProducts />} />
+          <Route path="socialmedia" element={<SocialLinks/>} />
 
         </Route>
         <Route path="/unauth-page" element={<UnauthPage />} />

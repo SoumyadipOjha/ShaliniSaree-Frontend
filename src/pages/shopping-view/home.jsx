@@ -4,7 +4,7 @@ import bannerTwo from "../../assets/banner-2.webp";
 import bannerThree from "../../assets/banner-3.webp";
 import {
   Airplay,
-  BabyIcon,
+  ShoppingBag,
   ChevronLeftIcon,
   ChevronRightIcon,
   CloudLightning,
@@ -14,7 +14,7 @@ import {
   ShirtIcon,
   ShoppingBasket,
   UmbrellaIcon,
-  WashingMachine,
+  Tag,
   WatchIcon,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -34,19 +34,18 @@ import { getFeatureImages } from "@/store/common-slice";
 const categoriesWithIcon = [
   { id: "men", label: "Party Wear", icon: ShirtIcon },
   { id: "women", label: "Wedding Wear", icon: CloudLightning },
-  { id: "kids", label: "Daily Wear", icon: BabyIcon },
+  { id: "kids", label: "Daily Wear", icon: ShirtIcon },
   { id: "accessories", label: "New Arrivals", icon: WatchIcon },
-  { id: "footwear", label: "Footwear", icon: WatchIcon },
-  
+  // { id: "footwear", label: "Footwear", icon: WatchIcon },
 ];
 
 const brandsWithIcon = [
   { id: "nike", label: "Organza", icon: Shirt },
-  { id: "adidas", label: "Silk", icon: WashingMachine },
-  { id: "puma", label: "Banarasi", icon: ShoppingBasket },
-  { id: "levi", label: "Tissue", icon: Airplay },
+  { id: "adidas", label: "Silk", icon: ShoppingBag },
+  { id: "puma", label: "Banarasi", icon: ShoppingBag },
+  { id: "levi", label: "Tissue", icon: Tag },
   { id: "zara", label: "Ajrakh", icon: Images },
-  { id: "h&m", label: "Ready to Wear", icon: Heater },
+  { id: "h&m", label: "Ready to Wear", icon: Tag },
 ];
 function ShoppingHome() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -187,7 +186,9 @@ function ShoppingHome() {
 
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Shop by Fabric</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Shop by Fabric
+          </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {brandsWithIcon.map((brandItem) => (
               <Card

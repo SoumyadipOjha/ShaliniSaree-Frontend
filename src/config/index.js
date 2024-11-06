@@ -62,8 +62,7 @@ export const addProductFormElements = [
       { id: "women", label: "Wedding Wear" },
       { id: "kids", label: "Daily Wear" },
       { id: "accessories", label: "New Arrivals" },
-      { id: "footwear", label: "Footwear" },
-      
+      // { id: "footwear", label: "Footwear" },
     ],
   },
   {
@@ -128,20 +127,25 @@ export const shoppingViewHeaderMenuItems = [
     label: "Daily Wear",
     path: "/shop/listing",
   },
-  {
-    id: "footwear",
-    label: "New Arrivals",
-    path: "/shop/listing",
-  },
+  // {
+  //   id: "footwear",
+  //   label: "Footwear",
+  //   path: "/shop/listing",
+  // },
   {
     id: "accessories",
-    label: "Accessories",
+    label: "New Arrivals",
     path: "/shop/listing",
   },
   {
     id: "search",
     label: "Search",
     path: "/shop/search",
+  },
+  {
+    id: "socialMedia",
+    label: "Socials",
+    path: "/shop/socialmedia",
   },
 ];
 
@@ -150,8 +154,7 @@ export const categoryOptionsMap = {
   women: "Wedding Wear",
   kids: "Daily Wear",
   accessories: "New arrivals",
-  footwear:"Footwear"
-  
+  footwear: "Footwear",
 };
 
 export const brandOptionsMap = {
@@ -169,8 +172,7 @@ export const filterOptions = {
     { id: "women", label: "Wedding wear" },
     { id: "kids", label: "Daily Wear" },
     { id: "accessories", label: "New Arrivals" },
-    { id: "footwear", label: "footwear" },
-    
+    // { id: "footwear", label: "footwear" },
   ],
   brand: [
     { id: "nike", label: "Organza" },
