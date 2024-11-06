@@ -37,7 +37,7 @@ const SocialLinks = () => {
 
         {/* Facebook Link */}
         <a
-          href="https://www.facebook.com/yourfacebookprofile"
+          href="https://www.facebook.com/profile.php?id=100007309008801&mibextid=LQQJ4d"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition"
