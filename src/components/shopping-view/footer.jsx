@@ -54,7 +54,11 @@ const Footer = () => {
           <p className="text-sm">Address: Kolkata, West Bengal, India</p>
         </div>
       </div>
-
+    <div>
+      Made with 🩷 by 
+      <div>Soumyadip</div> & 
+      <div>Shruti</div>
+    </div>
       {/* Bottom Footer */}
       <div className="mt-8 border-t border-gray-200 pt-6 text-center text-sm text-gray-600">
         © {new Date().getFullYear()} Shalini Saree. All rights reserved.

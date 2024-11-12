@@ -23,7 +23,7 @@ import UserCartWrapper from "./cart-wrapper";
 import { useEffect, useState } from "react";
 import { fetchCartItems } from "@/store/shop/cart-slice";
 import { Label } from "../ui/label";
-
+import logo from "../../assets/logo.png";
 function MenuItems() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -134,12 +134,15 @@ function HeaderRightContent() {
 
 function ShoppingHeader() {
   const { isAuthenticated } = useSelector((state) => state.auth);
- 
+
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background" style={{ backgroundColor: '#FFE4E1' }}>
+    <header
+      className="sticky top-0 z-40 w-full border-b bg-background"
+      style={{ backgroundColor: "#FFE4E1" }}
+    >
       <div className="flex h-16 items-center justify-between px-4 md:px-6">
         <Link to="/shop/home" className="flex items-center gap-2">
-          <HousePlug className="h-6 w-6" />
+          <img src={logo} alt="Logo" className="w-20 h-20" />
           <span className="font-bold">Shalini Saree</span>
         </Link>
         <Sheet>
